@@ -56,9 +56,12 @@ app.get("/api/hello", function(req, res) {
 app.post("/api/shorturl/new", urlencodedParser, (req, res) => {
   const url = req.body.url;
   let url_stripped = url.replace(/(^\w+:|^)\/\//, "");
-  console.log(url_stripped.indexOf("/"))
-  url_stripped = url_stripped.slice(0, url_stripped.indexOf("/")>-1? url_stripped.indexOf("/") : url_stripped.length+1);
-  console.log(url_stripped)
+  url_stripped = url_stripped.slice(
+    0,
+    url_stripped.indexOf("/") > -1
+      ? url_stripped.indexOf("/")
+      : url_stripped.length + 1
+  );
   if (url_stripped === url) res.send({ error: "invalid URL" });
   //check if inserted url exists
   dns.lookup(
