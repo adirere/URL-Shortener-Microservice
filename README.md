@@ -1,6 +1,7 @@
 # API Project: URL Shortener Microservice for freeCodeCamp
 
-[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-project-urlshortener)](https://repl.it/github/freeCodeCamp/boilerplate-project-urlshortener)
+Project page: [click here](https://glitch.com/~berry-boulder-aries)
+Live app: [click here](https://berry-boulder-aries.glitch.me)
 
 ### User Stories
 
